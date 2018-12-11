@@ -49,9 +49,6 @@ exports.graphql = {
 };
 ```
 
-开启中间件：
-
-
 在 `config/config.${env}.js` 配置提供 graphql 的路由。
 
 ```js
@@ -70,7 +67,7 @@ exports.graphql = {
   onPreGraphiQL: function* (ctx) {},
 };
 
-// 开启中间件拦截请求
+// 添加中间件拦截请求
 exports.middleware = [ 'graphql' ];
 ```
 
